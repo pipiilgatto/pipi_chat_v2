@@ -35,16 +35,18 @@ models = {
     "mixtral-8x7b-32768": {"name": "Mixtral-8x7b-Instruct-v0.1", "tokens": 32768, "developer": "Mistral"},
 }
 
-# Layout for model selection and max_tokens slider
-col = st.columns(1)
+# Layout for model selection
+col1, col2 = st.columns(2)
 
-with col:
+with col1:
     model_option = st.selectbox(
         "Choose a model:",
         options=list(models.keys()),
         format_func=lambda x: models[x]["name"],
         index=1 # Default to mixtral
     )
+with col2:
+  st.image("pipi_pic.png")
 
 # Detect model change and clear chat history if model has changed
 if st.session_state.selected_model != model_option:
