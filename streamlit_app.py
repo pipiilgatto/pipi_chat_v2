@@ -36,7 +36,7 @@ models = {
 }
 
 # Layout for model selection
-col1, col2 = st.columns(2)
+col1, col2 = st.columns([5,1])
 
 with col1:
     model_option = st.selectbox(
@@ -53,7 +53,7 @@ if st.session_state.selected_model != model_option:
     st.session_state.messages = []
     st.session_state.selected_model = model_option
 
-max_tokens_range = models[model_option]["tokens"]
+#max_tokens_range = models[model_option]["tokens"]
 
 # Display chat messages from history on app rerun
 for message in st.session_state.messages:
@@ -86,7 +86,6 @@ if prompt := st.chat_input("Enter your prompt here..."):
                 }
                 for m in st.session_state.messages
             ],
-            max_tokens=max_tokens,
             stream=True
         )
 
