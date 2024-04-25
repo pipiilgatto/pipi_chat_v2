@@ -14,12 +14,7 @@ def icon(emoji: str):
     )
 
 
-#icon("🏎️")
-
-# Display pipi picture
-  spacer, colx = st.columns([5, 1])  
-  with colx:  
-      st.image('pipi_pic.png')
+icon("☕")
 
 st.subheader("Chat with Pipi!", divider="blue", anchor=False)
 
