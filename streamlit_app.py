@@ -46,7 +46,10 @@ with col1:
         index=1 # Default to mixtral
     )
 with col2:
-  st.image("pipi_pic.png")
+#  st.image("pipi_pic.png")
+  video_file = open('pipi_video.mp4', 'rb')
+  video_bytes = video_file.read()
+  st.video(video_bytes)
 
 # Detect model change and clear chat history if model has changed
 if st.session_state.selected_model != model_option:
