@@ -13,7 +13,6 @@ def icon(emoji: str):
         unsafe_allow_html=True,
     )
 
-
 icon("☕")
 
 st.subheader("Chat with Pipi!", divider="blue", anchor=False)
