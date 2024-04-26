@@ -33,6 +33,8 @@ if "selected_model" not in st.session_state:
 models = {
     "llama3-70b-8192": {"name": "LLaMA3-70b-8192", "tokens": 8192, "developer": "Meta"},
     "mixtral-8x7b-32768": {"name": "Mixtral-8x7b-Instruct-v0.1", "tokens": 32768, "developer": "Mistral"},
+    "gemma-7b-it": {"name": "Gemma-7b-it", "tokens": 8192, "developer": "Google"},
+
 }
 
 # Layout for model selection
@@ -43,11 +45,11 @@ with col1:
         "Choose a model:",
         options=list(models.keys()),
         format_func=lambda x: models[x]["name"],
-        index=1 # Default to mixtral
+        index=0 # Default to llama3
     )
 with col2:
 #  st.image("pipi_pic.png")
-  video_file = open('pipi_video.mp4', 'rb')
+  video_file = open('pipi_video2.mp4', 'rb')
   video_bytes = video_file.read()
   st.video(video_bytes)
 
