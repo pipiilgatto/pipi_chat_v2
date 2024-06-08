@@ -47,7 +47,7 @@ with col1:
         index=0 # Default to llama3
     )
 with col2:
-   st.write("Meow~,ask me anything!")
+   st.write("Meow~ Ask me anything Purr~~~")
 #  st.image("pipi_pic.png")
 #  video_file = open('pipi_video2.mp4', 'rb')
 #  video_bytes = video_file.read()
