@@ -47,10 +47,10 @@ with col1:
         index=0 # Default to llama3
     )
 with col2:
-#  st.image("pipi_pic.png")
-  video_file = open('pipi_video2.mp4', 'rb')
-  video_bytes = video_file.read()
-  st.video(video_bytes)
+  st.image("pipi_pic.png")
+#  video_file = open('pipi_video2.mp4', 'rb')
+#  video_bytes = video_file.read()
+#  st.video(video_bytes)
 
 # Detect model change and clear chat history if model has changed
 if st.session_state.selected_model != model_option:
