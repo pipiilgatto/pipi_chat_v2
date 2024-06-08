@@ -3,7 +3,7 @@ from typing import Generator
 from groq import Groq
 
 st.set_page_config(page_icon="🖥", layout="wide",
-                   page_title="Why not have a conversation with Pipi?")
+                   page_title="Pipi loves questions!")
 
 
 def icon(emoji: str):
