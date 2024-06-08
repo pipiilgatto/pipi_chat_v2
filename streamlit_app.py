@@ -37,7 +37,7 @@ models = {
 }
 
 # Layout for model selection
-col1, col2 = st.columns([5,1])
+col1 = st.columns(1)
 
 with col1:
     model_option = st.selectbox(
@@ -46,8 +46,8 @@ with col1:
         format_func=lambda x: models[x]["name"],
         index=0 # Default to llama3
     )
-with col2:
-  st.image("pipi_pic.png")
+#with col2:
+#  st.image("pipi_pic.png")
 #  video_file = open('pipi_video2.mp4', 'rb')
 #  video_bytes = video_file.read()
 #  st.video(video_bytes)
