@@ -30,9 +30,8 @@ if "selected_model" not in st.session_state:
 
 # Define model details
 models = {
-    "llama3-70b-8192": {"name": "LLaMA3-70b-8192", "tokens": 8192, "developer": "Meta"},
-    "mixtral-8x7b-32768": {"name": "Mixtral-8x7b-Instruct-v0.1", "tokens": 32768, "developer": "Mistral"},
-    "llama-3.1-70b-versatile": {"name": "llama-3.1-70b-versatile", "tokens": 131072, "developer": "Meta"},
+    "deepseek-r1-distill-llama-70b": {"name": "Deepseek-R1-Distill-Llama70B", "tokens": 16384, "developer": "Deepseek"},
+    "llama-3.3-70b-versatile": {"name": "llama-3.3-70b-versatile", "tokens": 16384, "developer": "Meta"},
 
 }
 
